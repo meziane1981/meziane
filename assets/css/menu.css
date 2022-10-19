@@ -1,0 +1,357 @@
+#menu-responsive {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000; }
+  
+  .align-items-center {
+    align-items: center;
+    -ms-flex-align: center; }
+  
+  .bg-menu {
+    background-color: #F9F9F9;
+    /* padding: 1rem; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: 70px;
+    padding: 0 1rem 0 0.5rem; }
+  
+  #menu-responsive .logo {
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%; }
+  
+  .logo {
+    display: flex;
+    flex-grow: 1; }
+  
+  .logo a {
+    margin: 1rem auto 1rem auto; }
+  
+  .bg-menu a {
+    text-decoration: none !important; }
+  
+  .button-menu {
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    display: inline-block; }
+  
+  .logo-mobile {
+    margin-left: 1rem;
+    position: absolute;
+    left: 3.6rem;
+    display: none; }
+  
+  #jemabonne {
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2; }
+  
+  #jemeconnecte {
+    border: 1px solid #003C57;
+    color: #003C57;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem; }
+  
+  #jemeconnecte .icon {
+    padding-right: 0.5rem;
+    padding-top: 0.1rem; }
+  
+  #jemeconnecte .text-button {
+    margin-top: -3px; }
+  
+  .text-menu, #btn-search {
+    color: #003C57;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-right: 1rem; }
+  
+  #btn-search i {
+    margin-right: 0.3rem; }
+  
+  #btn-search span {
+    font-weight: normal; }
+  
+  .text-menu {
+    margin-left: 1rem; }
+  
+  .bg-menu .col-actions {
+    padding-right: 0px; }
+  
+  .search form {
+    display: flex;
+    align-items: center; }
+  
+  .search input {
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: #ed7203;
+    border: 0px solid #cccccc;
+    background: #FFFFFF; }
+    .search input::placeholder {
+      color: #ed7203; }
+  
+  @media (max-width: 768px) {
+    .bg-menu .text-button {
+      display: none; }
+    #jemabonne {
+      text-transform: none;
+      font-weight: bold;
+      font-size: 13px; }
+    #jemeconnecte {
+      border-width: 0px;
+      color: #003C57;
+      font-weight: bold;
+      padding: 0px 0px 0px 0.5rem; }
+    #jemeconnecte .icon img {
+      height: 20px;
+      width: auto; }
+    .bg-menu {
+      padding: 0.7rem; }
+    .button-menu {
+      padding: 0.05rem 0.7rem; } }
+  
+  /*--------open menu---------*/
+  /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    max-width: 400px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #003c57;
+    /* Black fallback color */
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    background-color: #003c57;
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    color: #fff;
+    top: 0;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: left;
+    /* Centered text/links */
+    /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */ }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1; }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    padding-bottom: 0.6rem;
+    font-weight: lighter; }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px; }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px; } }
+  
+  /**/
+  .open-menu {
+    cursor: pointer; }
+  
+  #menuOpen .box {
+    border-top: 1px solid #fff;
+    /* padding: 1rem 2rem; */ }
+  
+  #menuOpen #buttons, #menuOpen .box, #menuOpen #social {
+    padding: 1.5rem 2rem; }
+  
+  #social {
+    justify-content: center; }
+  
+  #social a {
+    margin-right: 1rem; }
+  
+  #social a:hover #social-btn {
+    fill: #ED7203; }
+  
+  #menuOpen .search {
+    color: #ED7203; }
+  
+  #menu-others {
+    background-color: #fff;
+    color: #003C57;
+    padding: 1rem 2rem; }
+    #menu-others ul li {
+      margin-left: 0; }
+  
+  #menu-others a {
+    color: #003C57;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.7rem; }
+  
+  #menuOpen ul {
+    list-style-type: none;
+    padding: 0px; }
+  
+  #menu-body .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem; }
+  
+  #menuOpen #buttons {
+    padding-top: 0rem;
+    padding-bottom: 2rem; }
+  
+  #menuOpen #buttons a {
+    border-radius: 6px;
+    padding: 0.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px; }
+  
+  #menuOpen #buttons .abo {
+    background-color: #ED7203; }
+  
+  #menuOpen #buttons .connect {
+    border: 1px solid #fff;
+    margin-bottom: 0.7rem;
+    justify-content: center; }
+  
+  #menuOpen #buttons .connect svg {
+    margin-right: 0.6rem; }
+  
+  #menuOpen #buttons .search {
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #ED7203;
+    padding-bottom: 0.7rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold; }
+  
+  #menuOpen #buttons .search i {
+    margin-right: 0.7rem; }
+  
+  /*--- accoridons-----*/
+  /* Style the buttons that are used to open and close the accordion-category panelArticles */
+  .accordion-category, .direct-link li {
+    font-family: 'MultipleSans Pro';
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.7rem 0px; }
+  
+  .direct-link li {
+    display: block; }
+  
+  .direct-link {
+    margin-bottom: 0px; }
+  
+  .accordion-category {
+    background-color: unset;
+    /* padding: 18px; */
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    display: flex;
+    align-items: center; }
+  
+  .accordion-category::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/arrow-accordion-white.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+    transform: rotate(-90deg); }
+  
+  .accordion-category.active::after {
+    background-image: url(../images/arrow-accordion-white.svg);
+    transform: rotate(0deg); }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion-category:hover {
+    /* background-color: #ccc; */ }
+  
+  /* Style the accordion-category panelArticles. Note: hidden by default */
+  .panel-body {
+    margin: 1rem 0 1.5rem;
+    padding: 0 18px;
+    /* background-color: white; */
+    border-left: 1px solid #fff; }
+  
+  .panelArticles a {
+    margin-bottom: 0.7rem; }
+  
+  .panelArticles {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out; }
+  
+  .main-content-mobile {
+    padding-top: 70px; }
+  
+  @media (max-width: 768px) {
+    .main-content-mobile {
+      padding-top: 50px; }
+    .bg-menu {
+      height: 50px; }
+    .logo {
+      display: none; }
+    .logo-mobile {
+      display: block; } }
+  
+  @media (max-width: 385px) {
+    .bg-menu {
+      padding-left: 0px; }
+    .logo-mobile {
+      left: 2.6rem; }
+    #jemeconnecte {
+      padding-left: 0px; } }
+  
+  /* @media(max-width:330px) {
+      .logo-mobile{
+          margin-left:1rem;
+          position:absolute;
+          left:3.6rem;
+          display:none;
+      }
+  } */
+  
