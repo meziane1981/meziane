@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Marsactu | Journal indépendant à Marseille</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-3 m-0 border-0 bd-example">
@@ -13,24 +15,94 @@
     <!-- Example Code -->
     
     <nav class="navbar bg-light fixed-top">
+    
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Barre de navigation hors toile</font></font></a>
+        <div class="container-fluid">
+        
+        </div>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Barre de navigation hors toile</font></font></a>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hors toile</font></font></h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="proche"></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body bg-menu">
+            
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <div id="menuOpen" class="overlay" style="width: 100%;">
+                <div class="overlay-content">
+                    <div id="menu-head" class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div id="buttons">
+                          <a href="/abonnement" class="connect d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16.186" height="16.186" viewBox="0 0 16.186 16.186">
+                <path id="noun_User_1643441" d="M10.093,10.093a4.046,4.046,0,1,1,4.046-4.046A4.046,4.046,0,0,1,10.093,10.093Zm0-6.474a2.428,2.428,0,1,0,2.428,2.428,2.428,2.428,0,0,0-2.428-2.428Zm8.093,13.758a5.665,5.665,0,0,0-5.665-5.665H7.665A5.665,5.665,0,0,0,2,17.377a.809.809,0,0,0,1.619,0A4.046,4.046,0,0,1,7.665,13.33h4.856a4.046,4.046,0,0,1,4.046,4.046.809.809,0,1,0,1.619,0Z" transform="translate(-2 -2)" fill="#fff"></path>
+              </svg>
+              je me connecte</a>
+              
+              
+              <a href="/abonnements" class="abo">je m'abonne</a>
+              
+                        <div class="search">
+                            <form action="https://marsactu.fr/" method="get">
+                                <i class="fas fa-search"></i><input type="text" placeholder="rechercher" name="s" id="s">
+                            </form>
+                        </div>
+                    </div>
+              
+                    <div id="menu-body">
+              <div class="box">
+              <div class="title">LE JOURNAL</div>
+              <button class="accordion-category item-menu-492867 ">Thématiques</button><div class="panelArticles">    <div class="panel-body">      <a href="https://marsactu.fr/category/theme-politique/" class="menu-sub-item item-parent-492867 item-menu-492867">Politique</a>      <a href="https://marsactu.fr/category/theme-economie/" class="menu-sub-item item-parent-492867 item-menu-492867">Économie</a>      <a href="https://marsactu.fr/category/theme-social/" class="menu-sub-item item-parent-492867 item-menu-492867">Social</a>      <a href="https://marsactu.fr/category/theme-justice/" class="menu-sub-item item-parent-492867 item-menu-492867">Justice</a>      <a href="https://marsactu.fr/category/theme-environnement/" class="menu-sub-item item-parent-492867 item-menu-492867">Environnement</a>      <a href="https://marsactu.fr/category/theme-transports/" class="menu-sub-item item-parent-492867 item-menu-492867">Transports</a>      <a href="https://marsactu.fr/category/theme-urbanisme/" class="menu-sub-item item-parent-492867 item-menu-492867">Urbanisme</a>      <a href="https://marsactu.fr/category/theme-societe/" class="menu-sub-item item-parent-492867 item-menu-492867">Société</a>      <a href="https://marsactu.fr/category/theme-education/" class="menu-sub-item item-parent-492867 item-menu-492867">Éducation</a>      <a href="https://marsactu.fr/category/theme-culture/" class="menu-sub-item item-parent-492867 item-menu-492867">Culture</a>      <a href="https://marsactu.fr/category/theme-sante/" class="menu-sub-item item-parent-492867 item-menu-492867">Santé</a>    </div>    </div>      <a href="/chroniques" class="accordion-category item-menu-492879 direct-link">Chroniques</a>      <a href="/dossier" class="accordion-category item-menu-492880 direct-link">Dossiers</a><button class="accordion-category item-menu-492881 ">La rédaction</button><div class="panelArticles">    <div class="panel-body">      <a href="/author/violetteartaud" class="menu-sub-item item-parent-492881 item-menu-492881">Violette Artaud</a>      <a href="/author/coralie-bonnefoy/" class="menu-sub-item item-parent-492881 item-menu-492881">Coralie Bonnefoy</a>      <a href="/author/lisacastelly" class="menu-sub-item item-parent-492881 item-menu-492881">Lisa Castelly</a>      <a href="/author/benoitgilles" class="menu-sub-item item-parent-492881 item-menu-492881">Benoît Gilles</a>      <a href="/author/suzanneleenhardt" class="menu-sub-item item-parent-492881 item-menu-492881">Suzanne Leenhardt</a>      <a href="/author/jmleforestier" class="menu-sub-item item-parent-492881 item-menu-492881">Jean-Marie Leforestier</a>      <a href="/author/julienvinzent" class="menu-sub-item item-parent-492881 item-menu-492881">Julien Vinzent</a>    </div>    </div>    </div>
+              <div class="box">
+              <div class="title">L'AGORA</div>
+                <a href="https://marsactu.fr/categorie-agora/blogs/" class="accordion-category item-menu-492857 direct-link">Billet de blog</a>      <a href="https://marsactu.fr/categorie-agora/blog-equipe-marsactu/" class="accordion-category item-menu-492858 direct-link">Blog de l'équipe</a>      <a href="https://marsactu.fr/categorie-agora/tribunes/" class="accordion-category item-menu-492859 direct-link">Tribune</a>      <a href="/agenda-culturel" class="accordion-category item-menu-492861 direct-link">Agenda culturel</a>      <a href="/categorie-agora/bons-plans/" class="accordion-category item-menu-492862 direct-link">Notre sélection avec Ventilo</a>    </div>
+              </div>
+              <div id="menu-others">
+              <ul><li><a href="https://marsactu.fr/podcasts/">PODCASTS</a></li><li><a href="https://marsactu.fr/evenements/">ÉVÉNEMENTS</a></li><li><a href="https://marsactu.helpscoutdocs.com/">FAQ</a></li><li><a href="/societe/contact">NOUS CONTACTER</a></li></ul></div>
+              
+                    
+                    <div id="social" class="d-flex">
+              <div class="social-icon">
+              <a href="https://facebook.com/Marsactu"><svg xmlns="http://www.w3.org/2000/svg" width="41.923" height="41.923" viewBox="0 0 41.923 41.923">
+              <path id="social-btn" d="M1807.752-7.917a20.962,20.962,0,1,0,20.962,20.962A20.962,20.962,0,0,0,1807.752-7.917Zm7.177,18.071c-.061.729-.171,1.455-.2,2.185-.02.508-.226.66-.714.65-1.24-.026-2.481-.009-3.817-.009V13.8c0,4.606-.011,9.211.015,13.817,0,.62-.166.8-.786.789-1.69-.041-3.383-.034-5.074,0-.554.01-.725-.146-.722-.717.023-4.646.014-9.292.014-13.939v-.724h-3.251V7.692h3.254c0-.291,0-.526,0-.76a41.85,41.85,0,0,1,.121-4.634,4.621,4.621,0,0,1,4.251-4.352c2.211-.274,4.464-.208,6.7-.263.121,0,.355.262.358.4.026,1.548.007,3.1.024,4.646,0,.4-.186.472-.524.469q-1.62-.012-3.24.006c-.707.009-1.094.32-1.121,1.014-.044,1.116-.012,2.236-.012,3.434h4.906C1815.047,8.546,1815,9.351,1814.929,10.154Z" transform="translate(-1786.79 7.917)" fill="#fff"></path>
+              </svg></a>
+              </div>
+              <div class="social-icon"> <a href="https://twitter.com/Marsactu"><svg xmlns="http://www.w3.org/2000/svg" width="41.923" height="41.923" viewBox="0 0 41.923 41.923">
+              <path d="M2012.9-8.013a20.962,20.962,0,1,0,20.962,20.962A20.962,20.962,0,0,0,2012.9-8.013ZM2024.7,5.7a9.753,9.753,0,0,1-2.22,2.3.261.261,0,0,0-.124.252,12.779,12.779,0,0,1-.267,3.181,14.456,14.456,0,0,1-2.608,5.8,13.222,13.222,0,0,1-4.146,3.651,13.638,13.638,0,0,1-6.046,1.7,14.026,14.026,0,0,1-3.931-.336,13.842,13.842,0,0,1-4.264-1.779c-.019-.012-.051-.016-.049-.048a9.8,9.8,0,0,0,7.153-2.018,4.936,4.936,0,0,1-2.8-.983,4.859,4.859,0,0,1-1.732-2.419,4.953,4.953,0,0,0,1.1.084,4.616,4.616,0,0,0,1.092-.167,4.873,4.873,0,0,1-3.885-4.84,4.86,4.86,0,0,0,1.05.428,4.581,4.581,0,0,0,1.137.171l-.09-.064a4.881,4.881,0,0,1-1.469-6.342c.058-.1.059-.1.133-.015a13.492,13.492,0,0,0,1.566,1.6,13.77,13.77,0,0,0,8,3.376,2.258,2.258,0,0,0,.419.019c0-.022-.007-.038-.01-.054a5.055,5.055,0,0,1-.028-1.951,4.893,4.893,0,0,1,3.934-3.9c.172-.029.346-.052.519-.078h.7c.019.026.048.017.073.019a4.57,4.57,0,0,1,.61.092,4.842,4.842,0,0,1,2.471,1.376.117.117,0,0,0,.121.044,10.272,10.272,0,0,0,1.62-.482,10.694,10.694,0,0,0,1.387-.672v0h0c.02.045-.01.082-.023.12a4.85,4.85,0,0,1-1.639,2.247c-.135.1-.279.2-.438.312a10.262,10.262,0,0,0,1.408-.276,12.759,12.759,0,0,0,1.339-.46A.4.4,0,0,1,2024.7,5.7Z" transform="translate(-1991.934 8.013)" fill="#fff" id="social-btn"></path>
+              </svg></a></div>
+              <div class="social-icon"> <a href="https://instagram.com/Marsactu"><svg xmlns="http://www.w3.org/2000/svg" width="41.923" height="41.923" viewBox="0 0 41.923 41.923">
+              <path d="M2263,54.057a3.868,3.868,0,0,0-3.85,3.8,3.828,3.828,0,0,0,3.823,3.851,3.756,3.756,0,0,0,3.844-3.8A3.8,3.8,0,0,0,2263,54.057Z" transform="translate(-2241.94 -36.871)" fill="#fff" id="social-btn"></path>
+              <path d="M2253.977,33.248a11.223,11.223,0,0,0-2.29-.255c-2.574-.031-5.15-.025-7.725,0a16.3,16.3,0,0,0-2.217.174,3.878,3.878,0,0,0-3.355,3.11,9.431,9.431,0,0,0-.246,2.033c0,3.185-.013,6.371.094,9.553a3.829,3.829,0,0,0,2.615,3.765,7.641,7.641,0,0,0,2.22.391c1.528.059,3.06.018,4.591.018v.078c1.828-.054,3.659-.066,5.484-.174a3.978,3.978,0,0,0,3.415-2.046,5.2,5.2,0,0,0,.623-2.6c.007-3.427-.008-6.855-.082-10.282A3.889,3.889,0,0,0,2253.977,33.248Zm-6.225,15.475a6.133,6.133,0,1,1-.026-12.266,6.133,6.133,0,1,1,.026,12.266Zm6.375-11.026a1.454,1.454,0,1,1,1.435-1.5A1.446,1.446,0,0,1,2254.127,37.7Z" transform="translate(-2226.756 -21.632)" fill="#fff" id="social-btn"></path>
+              <path d="M2218.041-7.917A20.962,20.962,0,1,0,2239,13.045,20.962,20.962,0,0,0,2218.041-7.917Zm11.869,25.182a9.269,9.269,0,0,1-.706,3.8,6.029,6.029,0,0,1-4.964,3.615,35.637,35.637,0,0,1-4.191.191q-3.069.042-6.139-.006a10.208,10.208,0,0,1-3.291-.481,5.941,5.941,0,0,1-4.185-5.164c-.246-2.048-.2-4.131-.288-6.2l.085,0c0-1.429-.025-2.859.008-4.288a9.915,9.915,0,0,1,.485-3.158,6.12,6.12,0,0,1,5.139-4.177,17.685,17.685,0,0,1,2.689-.181c2.59-.022,5.18-.025,7.771,0a9.263,9.263,0,0,1,3.685.662,6.054,6.054,0,0,1,3.723,5.022,29,29,0,0,1,.185,3.629C2229.942,12.776,2229.944,15.021,2229.909,17.265Z" transform="translate(-2197.079 7.917)" fill="#fff" id="social-btn"></path>
+              </svg></a></div>
+              <div class="social-icon"> <a href="https://www.linkedin.com/company/marsactu"><svg xmlns="http://www.w3.org/2000/svg" width="41.923" height="41.923" viewBox="0 0 41.923 41.923">
+              <path d="M2423.185-7.824a20.962,20.962,0,1,0,20.961,20.962A20.962,20.962,0,0,0,2423.185-7.824Zm-2.734,30.462H2416.5v-11.9h3.946Zm-1.976-14.181a2.36,2.36,0,0,1-2.384-2.391,2.383,2.383,0,1,1,2.384,2.391Zm16.564,14.183h-3.963v-.289q0-3.294,0-6.588a2.041,2.041,0,0,0-1.413-2.025,1.98,1.98,0,0,0-2.258.865,2.275,2.275,0,0,0-.306,1.2q0,3.272,0,6.544v.29h-3.966v-11.9h3.963v1.486a11.721,11.721,0,0,1,.906-.86,3.977,3.977,0,0,1,4.656-.3,4.55,4.55,0,0,1,2.3,3.144,4.924,4.924,0,0,1,.089.993c.007,2.406,0,4.812,0,7.218C2435.051,22.487,2435.044,22.557,2435.04,22.639Z" transform="translate(-2402.223 7.824)" fill="#fff" id="social-btn"></path>
+              </svg></a>
+              </div>
+              </div>
+              
+                </div>
+              </div>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maison</font></font></a>
+                <a class="nav-link active connect d-flex align-items-center" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JE ME CONNECTE</font></font></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lien</font></font></a>
+                <a class="nav-link bg-light" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JE M'ABONNE</font></font></a>
               </li>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Chercher" aria-label="Chercher">
+                <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chercher</font></font></button>
+              </form>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                   Menu déroulant
@@ -45,15 +117,12 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Chercher" aria-label="Chercher">
-              <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chercher</font></font></button>
-            </form>
+            
           </div>
         </div>
       </div>
     </nav>
-    
+  
     <!-- End Example Code -->
   </body>
 </html>
