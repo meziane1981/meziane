@@ -1,3 +1,9 @@
+
+element.style {
+  width: 100%;
+}
+
+
 #menu-responsive {
     position: fixed;
     right: 0;
@@ -406,4 +412,18 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/*ous    header*/
+#swipe-themes .maamar{
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #003C57;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  padding-right: 0rem;
+  margin-right: 0.7rem;
+  border-bottom: 2px solid #fff;
 }
