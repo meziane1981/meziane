@@ -84,7 +84,8 @@ element.style {
     font-weight: normal; }
   
   .text-menu {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    text-align:left; }
   
   .bg-menu .col-actions {
     padding-right: 0px; }
